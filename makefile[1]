@@ -1,9 +1,9 @@
 all: game
 
-main.o:	main.c
+main.o:	main[1].c
 
-test.o:	test.c test.h
-		gcc -c test.c -o test.o
+test.o:	test[1].c test[1].h
+		gcc -c test[1].c -o test.o
 
 game:		main.o test.o 
 		gcc main.o     test.o -o game
